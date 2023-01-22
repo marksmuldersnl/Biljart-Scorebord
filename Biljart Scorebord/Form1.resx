@@ -121,6 +121,10 @@
   <data name="btSluiten.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btSluiten.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btSluiten.Location" type="System.Drawing.Point, System.Drawing">
     <value>996, 12</value>
   </data>
@@ -144,10 +148,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btSluiten.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="btNieuw.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="btNieuw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btNieuw.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 12</value>
@@ -171,10 +178,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btNieuw.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="btStart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="btStart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>230, 12</value>
@@ -198,10 +208,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btStart.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="btCorrectie.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="btCorrectie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btCorrectie.Location" type="System.Drawing.Point, System.Drawing">
     <value>348, 12</value>
@@ -225,10 +238,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btCorrectie.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btInstellingen.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="btInstellingen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btInstellingen.Location" type="System.Drawing.Point, System.Drawing">
     <value>498, 12</value>
@@ -252,10 +268,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btInstellingen.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btSpelerSelect.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="btSpelerSelect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btSpelerSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>667, 12</value>
@@ -279,10 +298,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btSpelerSelect.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btUndo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="btUndo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btUndo.Location" type="System.Drawing.Point, System.Drawing">
     <value>836, 12</value>
@@ -306,12 +328,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btUndo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="lblMaxAantal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblMaxAantal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -675,6 +696,9 @@
   <data name="lblCarambolesA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
   </data>
+  <data name="lblCarambolesA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblCarambolesA.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 123</value>
   </data>
@@ -759,6 +783,9 @@
   <data name="btPunten.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
   </data>
+  <data name="btPunten.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btPunten.Location" type="System.Drawing.Point, System.Drawing">
     <value>414, 11</value>
   </data>
@@ -784,13 +811,13 @@
     <value>3</value>
   </data>
   <data name="tbSpelerAInvoer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 48pt</value>
+    <value>Microsoft Sans Serif, 36pt</value>
   </data>
   <data name="tbSpelerAInvoer.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="tbSpelerAInvoer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 80</value>
+    <value>600, 62</value>
   </data>
   <data name="tbSpelerAInvoer.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -808,13 +835,13 @@
     <value>1</value>
   </data>
   <data name="tbSpelerBInvoer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 48pt</value>
+    <value>Microsoft Sans Serif, 36pt</value>
   </data>
   <data name="tbSpelerBInvoer.Location" type="System.Drawing.Point, System.Drawing">
     <value>1100, 13</value>
   </data>
   <data name="tbSpelerBInvoer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 80</value>
+    <value>600, 62</value>
   </data>
   <data name="tbSpelerBInvoer.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -912,34 +939,34 @@
   <data name="&gt;&gt;udMaxAantalBeurten.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="CheckBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="chbMaxAantal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 27.75pt</value>
   </data>
-  <data name="CheckBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chbMaxAantal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="chbMaxAantal.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 96</value>
   </data>
-  <data name="CheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="chbMaxAantal.Size" type="System.Drawing.Size, System.Drawing">
     <value>376, 74</value>
   </data>
-  <data name="CheckBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="chbMaxAantal.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="CheckBox2.Text" xml:space="preserve">
+  <data name="chbMaxAantal.Text" xml:space="preserve">
     <value>Max. Aantal</value>
   </data>
-  <data name="&gt;&gt;CheckBox2.Name" xml:space="preserve">
-    <value>CheckBox2</value>
+  <data name="&gt;&gt;chbMaxAantal.Name" xml:space="preserve">
+    <value>chbMaxAantal</value>
   </data>
-  <data name="&gt;&gt;CheckBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;chbMaxAantal.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CheckBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chbMaxAantal.Parent" xml:space="preserve">
     <value>InstellenPanel</value>
   </data>
-  <data name="&gt;&gt;CheckBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;chbMaxAantal.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="chbMaxBeurten.Font" type="System.Drawing.Font, System.Drawing">
@@ -1045,7 +1072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;topPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="LopendewedstrijdPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 312</value>
@@ -1066,10 +1093,49 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LopendewedstrijdPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
+  </data>
+  <data name="lbVersie.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbVersie.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt</value>
+  </data>
+  <data name="lbVersie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbVersie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 28</value>
+  </data>
+  <data name="lbVersie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 42</value>
+  </data>
+  <data name="lbVersie.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbVersie.Text" xml:space="preserve">
+    <value>Versie</value>
+  </data>
+  <data name="lbVersie.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lbVersie.Name" xml:space="preserve">
+    <value>lbVersie</value>
+  </data>
+  <data name="&gt;&gt;lbVersie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbVersie.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;lbVersie.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lblBiljartClub.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
+  </data>
+  <data name="lblBiljartClub.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblBiljartClub.Location" type="System.Drawing.Point, System.Drawing">
     <value>330, 4</value>
@@ -1086,6 +1152,9 @@
   <data name="lblBiljartClub.Text" xml:space="preserve">
     <value>Biljartzaal Krijt ut Töpke</value>
   </data>
+  <data name="lblBiljartClub.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;lblBiljartClub.Name" xml:space="preserve">
     <value>lblBiljartClub</value>
   </data>
@@ -1096,7 +1165,7 @@
     <value>bottomPanel</value>
   </data>
   <data name="&gt;&gt;lblBiljartClub.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1123,7 +1192,10 @@
     <value>bottomPanel</value>
   </data>
   <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 4</value>
@@ -1147,10 +1219,10 @@
     <value>bottomPanel</value>
   </data>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="bottomPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 896</value>
+    <value>18, 963</value>
   </data>
   <data name="bottomPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1563, 100</value>
@@ -1168,13 +1240,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="lblNaamSpelerA.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblNaamSpelerA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
+  </data>
+  <data name="lblNaamSpelerA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblNaamSpelerA.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 12</value>
@@ -1188,6 +1263,9 @@
   <data name="lblNaamSpelerA.Text" xml:space="preserve">
     <value>Label1</value>
   </data>
+  <data name="lblNaamSpelerA.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;lblNaamSpelerA.Name" xml:space="preserve">
     <value>lblNaamSpelerA</value>
   </data>
@@ -1198,7 +1276,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblNaamSpelerA.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="lblNaamSpelerB.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1231,7 +1309,73 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblNaamSpelerB.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
+  </data>
+  <data name="lblBericht.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
+  <data name="lblBericht.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBericht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 865</value>
+  </data>
+  <data name="lblBericht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 62</value>
+  </data>
+  <data name="lblBericht.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblBericht.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblBericht.Name" xml:space="preserve">
+    <value>lblBericht</value>
+  </data>
+  <data name="&gt;&gt;lblBericht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBericht.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBericht.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>11, 12</value>
+  </metadata>
+  <data name="lblTijd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 48pt</value>
+  </data>
+  <data name="lblTijd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTijd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1360, 9</value>
+  </data>
+  <data name="lblTijd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 73</value>
+  </data>
+  <data name="lblTijd.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblTijd.Text" xml:space="preserve">
+    <value>Tijd</value>
+  </data>
+  <data name="lblTijd.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblTijd.Name" xml:space="preserve">
+    <value>lblTijd</value>
+  </data>
+  <data name="&gt;&gt;lblTijd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTijd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTijd.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2417,6 +2561,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Scorebord</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
+    <value>Timer1</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

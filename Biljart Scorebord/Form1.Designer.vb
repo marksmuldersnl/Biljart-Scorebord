@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btSluiten = New System.Windows.Forms.Button()
         Me.btNieuw = New System.Windows.Forms.Button()
@@ -52,16 +53,20 @@ Partial Class Form1
         Me.topPanel = New System.Windows.Forms.Panel()
         Me.InstellenPanel = New System.Windows.Forms.Panel()
         Me.udMaxAantalBeurten = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.chbMaxAantal = New System.Windows.Forms.CheckBox()
         Me.chbMaxBeurten = New System.Windows.Forms.CheckBox()
         Me.btSwitchSpelers = New System.Windows.Forms.Button()
         Me.LopendewedstrijdPanel = New System.Windows.Forms.Panel()
         Me.bottomPanel = New System.Windows.Forms.Panel()
+        Me.lbVersie = New System.Windows.Forms.Label()
         Me.lblBiljartClub = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblNaamSpelerA = New System.Windows.Forms.Label()
         Me.lblNaamSpelerB = New System.Windows.Forms.Label()
+        Me.lblBericht = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblTijd = New System.Windows.Forms.Label()
         CType(Me.udAantalSpelerB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udAantalSpelerA, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.topPanel.SuspendLayout()
@@ -251,7 +256,7 @@ Partial Class Form1
         'InstellenPanel
         '
         Me.InstellenPanel.Controls.Add(Me.udMaxAantalBeurten)
-        Me.InstellenPanel.Controls.Add(Me.CheckBox2)
+        Me.InstellenPanel.Controls.Add(Me.chbMaxAantal)
         Me.InstellenPanel.Controls.Add(Me.chbMaxBeurten)
         Me.InstellenPanel.Controls.Add(Me.btSwitchSpelers)
         resources.ApplyResources(Me.InstellenPanel, "InstellenPanel")
@@ -264,11 +269,11 @@ Partial Class Form1
         Me.udMaxAantalBeurten.Name = "udMaxAantalBeurten"
         Me.udMaxAantalBeurten.Value = New Decimal(New Integer() {20, 0, 0, 0})
         '
-        'CheckBox2
+        'chbMaxAantal
         '
-        resources.ApplyResources(Me.CheckBox2, "CheckBox2")
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.chbMaxAantal, "chbMaxAantal")
+        Me.chbMaxAantal.Name = "chbMaxAantal"
+        Me.chbMaxAantal.UseVisualStyleBackColor = True
         '
         'chbMaxBeurten
         '
@@ -307,11 +312,18 @@ Partial Class Form1
         '
         'bottomPanel
         '
+        Me.bottomPanel.Controls.Add(Me.lbVersie)
         Me.bottomPanel.Controls.Add(Me.lblBiljartClub)
         Me.bottomPanel.Controls.Add(Me.PictureBox2)
         Me.bottomPanel.Controls.Add(Me.PictureBox1)
         resources.ApplyResources(Me.bottomPanel, "bottomPanel")
         Me.bottomPanel.Name = "bottomPanel"
+        '
+        'lbVersie
+        '
+        resources.ApplyResources(Me.lbVersie, "lbVersie")
+        Me.lbVersie.ForeColor = System.Drawing.Color.Yellow
+        Me.lbVersie.Name = "lbVersie"
         '
         'lblBiljartClub
         '
@@ -342,11 +354,28 @@ Partial Class Form1
         resources.ApplyResources(Me.lblNaamSpelerB, "lblNaamSpelerB")
         Me.lblNaamSpelerB.Name = "lblNaamSpelerB"
         '
+        'lblBericht
+        '
+        resources.ApplyResources(Me.lblBericht, "lblBericht")
+        Me.lblBericht.Name = "lblBericht"
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
+        'lblTijd
+        '
+        resources.ApplyResources(Me.lblTijd, "lblTijd")
+        Me.lblTijd.ForeColor = System.Drawing.Color.Yellow
+        Me.lblTijd.Name = "lblTijd"
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Controls.Add(Me.lblTijd)
+        Me.Controls.Add(Me.lblBericht)
         Me.Controls.Add(Me.bottomPanel)
         Me.Controls.Add(Me.LopendewedstrijdPanel)
         Me.Controls.Add(Me.topPanel)
@@ -373,6 +402,7 @@ Partial Class Form1
         Me.LopendewedstrijdPanel.ResumeLayout(False)
         Me.LopendewedstrijdPanel.PerformLayout()
         Me.bottomPanel.ResumeLayout(False)
+        Me.bottomPanel.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -416,7 +446,11 @@ Partial Class Form1
     Friend WithEvents lblNaamSpelerB As Label
     Friend WithEvents InstellenPanel As Panel
     Friend WithEvents udMaxAantalBeurten As NumericUpDown
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents chbMaxAantal As CheckBox
     Friend WithEvents chbMaxBeurten As CheckBox
     Friend WithEvents btSwitchSpelers As Button
+    Friend WithEvents lblBericht As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents lblTijd As Label
+    Friend WithEvents lbVersie As Label
 End Class

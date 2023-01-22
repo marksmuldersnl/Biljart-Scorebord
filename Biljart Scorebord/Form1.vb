@@ -1,15 +1,6 @@
-﻿Public Class Form1
+﻿Imports System
 
-    Public AantalPerBeurtA() As Long
-    Public AantalPerBeurtB() As Long
-    Public TotaalA As Long, TotaalB As Long
-    Public Beurten As Long
-    Public MaxCarambole_A As Long, MaxCarambole_B As Long
-    Public Gemiddelde_A As Double, Gemiddelde_B As Double
-    Public HuidigeSpeler As Boolean
-
-
-    Public Const Speler_A As Boolean = True, Speler_B As Boolean = False
+Public Class Form1
     Const Max_Bereikt = 1
     Const Te_Veel = 2
     Const Nog_Niet = 0
@@ -19,6 +10,14 @@
 
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Dim myFileVersionInfo As FileVersionInfo = FileVersionInfo.GetVersionInfo(My.Application.Info.DirectoryPath + "\Biljart Scorebord.exe")
+        If IsExcelInstalled() = False Then
+            Me.btSpelerSelect.Enabled = False
+            Me.btSpelerSelect.Width = 0
+            Me.btSpelerSelect.Visible = False
+        Else
+            Me.btSpelerSelect.Enabled = True
+        End If
         With Me
             'uitlijnen knoppen
             .btNieuw.Left = (.Width - .btNieuw.Width - .btStart.Width - .btCorrectie.Width - .btSpelerSelect.Width - .btUndo.Width - .btSluiten.Width) / 2
@@ -67,9 +66,18 @@
             .btPunten.Left = (.LopendewedstrijdPanel.Width - .btPunten.Width) / 2
             'uitlijnen naam labels
             .lblNaamSpelerA.Left = .topPanel.Left
-            .lblNaamSpelerA.Top = .topPanel.Top
+            .lblNaamSpelerA.Top = .LopendewedstrijdPanel.Top - .lblNaamSpelerA.Height - 10
             .lblNaamSpelerB.Top = .lblNaamSpelerA.Top
             .lblNaamSpelerB.Left = .Width - .lblNaamSpelerB.Width - 5
+
+            .lblBericht.Left = (.bottomPanel.Width - .lblBericht.Width) / 2
+            .lblBiljartClub.Left = (.bottomPanel.Width - .lblBiljartClub.Width) / 2
+            .lblTijd.Left = Me.Width - .lblTijd.Width
+            .lbVersie.Left = 10
+            .lbVersie.Text = "Versie " & myFileVersionInfo.FileVersion
+            .lbVersie.Top = .PictureBox1.Top + (.PictureBox1.Height - .lbVersie.Height) / 2
+            .lbVersie.Left = .PictureBox1.Left + .PictureBox1.Width + 5
+
         End With
     End Sub
 
@@ -80,6 +88,8 @@
             .LopendewedstrijdPanel.Visible = True
             .lblNaamSpelerA.Text = .tbSpelerAInvoer.Text
             .lblNaamSpelerB.Text = .tbSpelerBInvoer.Text
+            .lblNaamSpelerA.Visible = True
+            .lblNaamSpelerB.Visible = True
             If .udAantalSpelerA.Value = 0 Or udAantalSpelerB.Value = 0 Then
                 .lblMaxAantalA.Visible = False
                 .lblMaxAantalB.Visible = False
@@ -96,13 +106,24 @@
             Me.tbInvoerAantalB.Visible = False
             Me.tbInvoerAantalA.Focus()
             Me.AcceptButton = Me.btPunten
+            Me.btStart.Enabled = True
+
 
         End With
+        Beurten = 0
+
+        TotaalA = 0
+        TotaalB = 0
+
     End Sub
 
     Private Sub btNieuw_Click(sender As Object, e As EventArgs) Handles btNieuw.Click
+        btUndo.Enabled = False
         Me.topPanel.Visible = True
         Me.LopendewedstrijdPanel.Visible = False
+        Me.btCorrectie.Enabled = False
+        Me.lblNaamSpelerA.Visible = False
+        Me.lblNaamSpelerB.Visible = False
     End Sub
 
     Private Sub chbMaxBeurten_CheckedChanged(sender As Object, e As EventArgs)
@@ -118,17 +139,18 @@
             .lblHoogsteSerieA.Text = ""
             .lblHoogsteSerieB.Text = ""
             .lblBiljartClub.Text = My.Settings.Clubnaam
-
+            .udMaxAantalBeurten.Value = My.Settings.MaxAantalBeurtenStandaard
+            .btUndo.Enabled = False
+            .lblNaamSpelerA.Visible = False
+            .lblNaamSpelerB.Visible = False
         End With
+        Erase AantalPerBeurtA
+        Erase AantalPerBeurtB
+
+        Me.btCorrectie.Enabled = False
     End Sub
 
-    Private Function gemiddelde(ByVal gespeeldebeurten As Long, aantalCaramboles As Long) As Double
-        If gespeeldebeurten = 0 Then
-            gemiddelde = 0
-        Else
-            gemiddelde = aantalCaramboles / gespeeldebeurten
-        End If
-    End Function
+
 
     Private Sub tbInvoerAantalA_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbInvoerAantalA.KeyPress
         '97 - 122 = Ascii codes for simple letters
@@ -159,22 +181,175 @@
     End Sub
 
     Private Sub btPunten_Click(sender As Object, e As EventArgs) Handles btPunten.Click
+
         If HuidigeSpeler = Speler_A Then
+            Beurten = Beurten + 1
+
+            ReDim Preserve AantalPerBeurtA(0 To 1, 0 To Beurten - 1)
+            AantalPerBeurtA(0, Beurten - 1) = Beurten
+
+            AantalPerBeurtA(1, Beurten - 1) = Val(tbInvoerAantalA.Text)
             Me.tbInvoerAantalB.Visible = True
             Me.tbInvoerAantalA.Visible = False
             Me.tbInvoerAantalA.ResetText()
             Me.tbInvoerAantalB.Focus()
-
         Else
+            ReDim Preserve AantalPerBeurtB(0 To 1, 0 To Beurten - 1)
+            AantalPerBeurtB(0, Beurten - 1) = Beurten
+            AantalPerBeurtB(1, Beurten - 1) = Val(tbInvoerAantalB.Text)
             Me.tbInvoerAantalA.Visible = True
             Me.tbInvoerAantalB.Visible = False
             Me.tbInvoerAantalB.ResetText()
             Me.tbInvoerAantalA.Focus()
         End If
+        invullen(HuidigeSpeler)
+        Me.CheckVoorEind()
         HuidigeSpeler = Not HuidigeSpeler
+        btUndo.Enabled = True
+        If Beurten > 1 Then Me.btCorrectie.Enabled = True
     End Sub
 
     Private Sub btInstellingen_Click(sender As Object, e As EventArgs) Handles btInstellingen.Click
-        Form2.Show()
+        Form2.ShowDialog()
     End Sub
+    Private Sub CheckVoorEind()
+        If Me.chbMaxBeurten.Checked = True Then
+            If HuidigeSpeler = Speler_A Then
+                Select Case Beurten
+                    Case Me.udMaxAantalBeurten.Value
+                        Me.lblBericht.Text = "Laatste beurt"
+                    Case Me.udMaxAantalBeurten.Value - 1
+                        Me.lblBericht.Text = "Voorlaatste beurt"
+
+                    Case Else
+                        Me.lblBericht.ResetText()
+                End Select
+            Else
+                Select Case Beurten
+                    Case Me.udMaxAantalBeurten.Value
+                        Me.lblBericht.Text = "Einde wedstrijd"
+                        Me.btPunten.Enabled = False
+                        Me.tbInvoerAantalB.Visible = False
+                        Me.tbInvoerAantalA.Visible = False
+                        Me.AcceptButton = Me.btNieuw
+                    Case Me.udMaxAantalBeurten.Value - 1
+                        Me.lblBericht.Text = "Laatste beurt"
+                    Case Me.udMaxAantalBeurten.Value - 2
+                        Me.lblBericht.Text = "Voorlaatste beurt"
+                    Case Else
+                        Me.lblBericht.ResetText()
+                End Select
+            End If
+        Else
+
+        End If
+    End Sub
+
+    Private Sub lblBericht_TextChanged(sender As Object, e As EventArgs) Handles lblBericht.TextChanged
+        Select Case Me.lblBericht.Text
+            Case "Voorlaatste beurt"
+                Me.lblBericht.ForeColor = Color.Red
+                Me.lblBericht.BackColor = Color.Black
+
+            Case "Laatste beurt"
+                Me.lblBericht.ForeColor = Color.Black
+                Me.lblBericht.BackColor = Color.Yellow
+
+            Case "Einde wedstrijd"
+                Me.lblBericht.ForeColor = Color.Black
+                Me.lblBericht.BackColor = Color.Red
+            Case Else
+                Me.lblBericht.ForeColor = Color.Yellow
+                Me.lblBericht.BackColor = Color.Black
+        End Select
+    End Sub
+
+    Private Sub btSpelerSelect_Click(sender As Object, e As EventArgs) Handles btSpelerSelect.Click
+
+        Form3.ShowDialog()
+    End Sub
+
+    Private Sub btSwitchSpelers_Click(sender As Object, e As EventArgs) Handles btSwitchSpelers.Click
+        Dim SpelerTemp As String
+
+        Dim AantalTemp As Long
+
+
+        With Me
+            SpelerTemp = .tbSpelerAInvoer.Text
+            AantalTemp = .udAantalSpelerA.Value
+            .udAantalSpelerA.Value = .udAantalSpelerB.Value
+            .tbSpelerAInvoer.Text = .tbSpelerBInvoer.Text
+            .tbSpelerBInvoer.Text = SpelerTemp
+            .udAantalSpelerB.Value = AantalTemp
+
+        End With
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        lblTijd.Text = Format(Now, "HH:mm:ss")
+    End Sub
+
+    Private Sub btCorrectie_Click(sender As Object, e As EventArgs) Handles btCorrectie.Click
+        Form5.ShowDialog()
+    End Sub
+
+    Private Sub btUndo_Click(sender As Object, e As EventArgs) Handles btUndo.Click
+        'Dim i As Int32
+
+        If HuidigeSpeler = Speler_A Then
+
+            Me.tbInvoerAantalB.Visible = True
+            Me.tbInvoerAantalA.Visible = False
+            Me.tbInvoerAantalA.ResetText()
+            Me.tbInvoerAantalB.Focus()
+            ReDim Preserve AantalPerBeurtA(0 To 1, 0 To Beurten - 1)
+            'TotaalA = 0
+            'For i = 0 To AantalPerBeurtA.GetUpperBound(1)
+            '    TotaalA = TotaalA + AantalPerBeurtA(1, i)
+            'Next i
+        Else
+
+            Me.tbInvoerAantalA.Visible = True
+            Me.tbInvoerAantalB.Visible = False
+            Me.tbInvoerAantalB.ResetText()
+            Me.tbInvoerAantalA.Focus()
+            ReDim Preserve AantalPerBeurtB(0 To 1, 0 To Beurten - 2)
+            'TotaalB = 0
+            'For i = 0 To AantalPerBeurtB.GetUpperBound(1)
+            '    TotaalB = TotaalB + AantalPerBeurtB(1, i)
+            'Next i
+            Beurten = Beurten - 1
+        End If
+        invullen(HuidigeSpeler)
+        Me.CheckVoorEind()
+        HuidigeSpeler = Not HuidigeSpeler
+        If HuidigeSpeler And Beurten = 0 Then btUndo.Enabled = False
+    End Sub
+
+    Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+
+    End Sub
+
+    Private Sub lblNaamSpelerB_Resize(sender As Object, e As EventArgs) Handles lblNaamSpelerB.Resize
+        With Me
+            .lblNaamSpelerB.Top = .lblNaamSpelerA.Top
+            .lblNaamSpelerB.Left = .Width - .lblNaamSpelerB.Width - 5
+        End With
+
+    End Sub
+
+
+    Function IsExcelInstalled() As Boolean
+        'check of excel geinstalleerd is
+        Dim officetype = Type.GetTypeFromProgID("Excel.Application")
+        If officetype = Nothing Then
+            IsExcelInstalled = False
+        Else
+            IsExcelInstalled = True
+        End If
+
+        'om te testen
+        'IsExcelInstalled = False
+    End Function
 End Class
