@@ -1,9 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.IO
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Excel = Microsoft.Office.Interop.Excel
 Imports File = System.IO.File
-Imports System.Drawing.Drawing2D
 
 
 Public Class Form3
@@ -57,22 +55,22 @@ Public Class Form3
 
 
     Private Sub Form3_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        'If Not wb Is Nothing Then
+        If Not wb.Name <> "" Then
 
 
-        '    ws1 = Nothing
-        '    ws2 = Nothing
-        '    wb.Close(SaveChanges:=False)
-        '    wb = Nothing
-        '    xlsApp.Quit()
-        '    xlsApp = Nothing
-        '    dtSpeler1.Clear()
-        '    dtSpeler2.Clear()
-        'End If
+
+            wb.Close(SaveChanges:=False)
+
+            xlsApp.Quit()
+
+            dtSpeler1.Clear()
+            dtSpeler2.Clear()
+        End If
     End Sub
 
     Private Sub btClose_Click(sender As Object, e As EventArgs) Handles btClose.Click
         Me.Close()
+
     End Sub
 
     Private Sub cbxKiesCompetitie_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxKiesCompetitie.SelectedIndexChanged

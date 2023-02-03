@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.IO
+Imports Microsoft.Office.Interop.Excel
 
 Public Class Form1
     Const Max_Bereikt = 1
@@ -64,6 +65,9 @@ Public Class Form1
             .tbInvoerAantalA.Left = 5
             .tbInvoerAantalB.Left = .LopendewedstrijdPanel.Width - .tbInvoerAantalB.Width - 5
             .btPunten.Left = (.LopendewedstrijdPanel.Width - .btPunten.Width) / 2
+            .VerticalProgressBar1.Left = .lblCarambolesA.Left + .lblCarambolesA.Width + 10
+            .VerticalProgressBar2.Left = .lblCarambolesB.Left - .VerticalProgressBar2.Width - 10
+
             'uitlijnen naam labels
             .lblNaamSpelerA.Left = .topPanel.Left
             .lblNaamSpelerA.Top = .LopendewedstrijdPanel.Top - .lblNaamSpelerA.Height - 10
@@ -72,48 +76,82 @@ Public Class Form1
 
             .lblBericht.Left = (.bottomPanel.Width - .lblBericht.Width) / 2
             .lblBiljartClub.Left = (.bottomPanel.Width - .lblBiljartClub.Width) / 2
-            .lblTijd.Left = Me.Width - .lblTijd.Width
+            .lblTijd.Left = .Width - .lblTijd.Width
             .lbVersie.Left = 10
             .lbVersie.Text = "Versie " & myFileVersionInfo.FileVersion
             .lbVersie.Top = .PictureBox1.Top + (.PictureBox1.Height - .lbVersie.Height) / 2
             .lbVersie.Left = .PictureBox1.Left + .PictureBox1.Width + 5
+            TotaalA = 0
+            TotaalB = 0
+
 
         End With
     End Sub
 
     Private Sub btStart_Click(sender As Object, e As EventArgs) Handles btStart.Click
+        Dim checkzero As Boolean
+        checkzero = Me.udAantalSpelerA.Value = 0 Or Me.udAantalSpelerB.Value = 0
+        AantalBereikt = False
 
-        With Me
-            .topPanel.Visible = False
-            .LopendewedstrijdPanel.Visible = True
-            .lblNaamSpelerA.Text = .tbSpelerAInvoer.Text
-            .lblNaamSpelerB.Text = .tbSpelerBInvoer.Text
-            .lblNaamSpelerA.Visible = True
-            .lblNaamSpelerB.Visible = True
-            If .udAantalSpelerA.Value = 0 Or udAantalSpelerB.Value = 0 Then
-                .lblMaxAantalA.Visible = False
-                .lblMaxAantalB.Visible = False
-                .lblMaxAantal.Visible = False
-            Else
-                .lblMaxAantal.Visible = True
-                .lblMaxAantalA.Visible = True
-                .lblMaxAantalB.Visible = True
-                .lblMaxAantalA.Text = .udAantalSpelerA.Value
-                .lblMaxAantalB.Text = .udAantalSpelerB.Value
-            End If
-            HuidigeSpeler = Speler_A
-            Me.tbInvoerAantalA.Visible = True
-            Me.tbInvoerAantalB.Visible = False
-            Me.tbInvoerAantalA.Focus()
-            Me.AcceptButton = Me.btPunten
-            Me.btStart.Enabled = True
+        If Me.chbMaxAantal.Checked = True And checkzero Then
+            Me.lblBericht.Text = "Max aantal staat aan, aantal is 0."
+            Me.lblBericht.ForeColor = Color.Red
+        Else
+            With Me
+                .topPanel.Visible = False
+                .LopendewedstrijdPanel.Visible = True
+                .lblNaamSpelerA.Text = .tbSpelerAInvoer.Text
+                .lblNaamSpelerB.Text = .tbSpelerBInvoer.Text
+                .lblNaamSpelerA.Visible = True
+                .lblNaamSpelerB.Visible = True
+                If .udAantalSpelerA.Value = 0 Or udAantalSpelerB.Value = 0 Then
+                    .lblMaxAantalA.Visible = False
+                    .lblMaxAantalB.Visible = False
+                    .lblMaxAantal.Visible = False
+                Else
+                    .lblMaxAantal.Visible = True
+                    .lblMaxAantalA.Visible = True
+                    .lblMaxAantalB.Visible = True
+                    .lblMaxAantalA.Text = .udAantalSpelerA.Value
+                    .lblMaxAantalB.Text = .udAantalSpelerB.Value
+                End If
+                HuidigeSpeler = Speler_A
+                .tbInvoerAantalA.Visible = True
+                .tbInvoerAantalB.Visible = False
+                .tbInvoerAantalA.Focus()
+                .AcceptButton = Me.btPunten
+                .btPunten.Enabled = True
+                .btStart.Enabled = True
+                .lblCarambolesA.ResetText()
+                .lblCarambolesB.ResetText()
+                .lblGemiddeldeA.ResetText()
+                .lblGemiddeldeB.ResetText()
+                .lblHoogsteSerieA.ResetText()
+                .lblHoogsteSerieB.ResetText()
+                .btSpelerSelect.Enabled = False
 
+                MaxCarambole_A = .udAantalSpelerA.Value
+                MaxCarambole_B = .udAantalSpelerB.Value
+                .lbPercA.Visible = .lblMaxAantalA.Visible
+                .lbPercB.Visible = .lbPercA.Visible
+                .VerticalProgressBar1.Visible = .lblMaxAantalA.Visible
+                .VerticalProgressBar2.Visible = .lblMaxAantalB.Visible
+                .VerticalProgressBar1.Value = 0
+                .VerticalProgressBar2.Value = 0
+                .lbPercA.Text = "0%"
+                .lbPercB.Text = "0%"
+                .lbPercA.Left = .lblMaxAantalA.Left + .lblMaxAantalA.Width
+                .lbPercB.Left = .lblHoogsteSerieB.Left - .lbPercB.Width
+                .lblBericht.ResetText()
+                .lblBericht.ForeColor = Color.Yellow
+            End With
+            Beurten = 0
 
-        End With
-        Beurten = 0
+            TotaalA = 0
+            TotaalB = 0
 
-        TotaalA = 0
-        TotaalB = 0
+        End If
+
 
     End Sub
 
@@ -124,6 +162,8 @@ Public Class Form1
         Me.btCorrectie.Enabled = False
         Me.lblNaamSpelerA.Visible = False
         Me.lblNaamSpelerB.Visible = False
+        Me.btSpelerSelect.Enabled = True
+
     End Sub
 
     Private Sub chbMaxBeurten_CheckedChanged(sender As Object, e As EventArgs)
@@ -131,19 +171,40 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-        With Me
-            .lblCarambolesA.Text = ""
-            .lblCarambolesB.Text = ""
-            .lblGemiddeldeA.Text = ""
-            .lblGemiddeldeB.Text = ""
-            .lblHoogsteSerieA.Text = ""
-            .lblHoogsteSerieB.Text = ""
-            .lblBiljartClub.Text = My.Settings.Clubnaam
-            .udMaxAantalBeurten.Value = My.Settings.MaxAantalBeurtenStandaard
-            .btUndo.Enabled = False
-            .lblNaamSpelerA.Visible = False
-            .lblNaamSpelerB.Visible = False
-        End With
+
+        Dim sPadLogo As String
+        sPadLogo = My.Settings.Logo
+        If sPadLogo <> "" Then
+            If File.Exists(sPadLogo) And IsValidImage(sPadLogo) Then
+                With Me
+                    .PictureBox1.Image = Bitmap.FromFile(sPadLogo)
+                End With
+            Else
+                With Me
+                    .PictureBox1.Image = My.Resources.StandaardLogo.scorebordlogo
+                    Form2.tbLogoPad.ResetText()
+                    My.Settings.Logo = ""
+                    My.Settings.Save()
+                End With
+            End If
+            With Me
+                .lblCarambolesA.Text = ""
+                .lblCarambolesB.Text = ""
+                .lblGemiddeldeA.Text = ""
+                .lblGemiddeldeB.Text = ""
+                .lblHoogsteSerieA.Text = ""
+                .lblHoogsteSerieB.Text = ""
+                .lblBiljartClub.Text = My.Settings.Clubnaam
+                .udMaxAantalBeurten.Value = My.Settings.MaxAantalBeurtenStandaard
+                .btUndo.Enabled = False
+                .lblNaamSpelerA.Visible = False
+                .lblNaamSpelerB.Visible = False
+                .lblNaamSpelerA.ResetText()
+                .lblNaamSpelerB.ResetText()
+
+
+            End With
+        End If
         Erase AantalPerBeurtA
         Erase AantalPerBeurtB
 
@@ -181,32 +242,64 @@ Public Class Form1
     End Sub
 
     Private Sub btPunten_Click(sender As Object, e As EventArgs) Handles btPunten.Click
+        Dim NieuwTotaalA As Long
+        Dim NieuwTotaalB As Long
+
+
+
 
         If HuidigeSpeler = Speler_A Then
-            Beurten = Beurten + 1
+            NieuwTotaalA = Val(Me.tbInvoerAantalA.Text) + TotaalA
+            'MsgBox(NieuwTotaalA)
+            If Me.chbMaxAantal.Checked And NieuwTotaalA > MaxCarambole_A Then
+                Me.lblBericht.Text = "Te veel caramboles ingevoerd"
+                Me.tbInvoerAantalA.ResetText()
+                Me.tbInvoerAantalA.Focus()
+            Else
+                Beurten = Beurten + 1
+                If NieuwTotaalA = MaxCarambole_A And Me.chbMaxAantal.Checked Then
+                    AantalBereikt = True
+                End If
+                ReDim Preserve AantalPerBeurtA(0 To 1, 0 To Beurten - 1)
+                AantalPerBeurtA(0, Beurten - 1) = Beurten
+                AantalPerBeurtA(1, Beurten - 1) = Val(tbInvoerAantalA.Text)
+                Me.tbInvoerAantalB.Visible = True
+                Me.tbInvoerAantalA.Visible = False
+                Me.tbInvoerAantalA.ResetText()
+                Me.tbInvoerAantalB.Focus()
+                Me.lblBericht.ResetText()
 
-            ReDim Preserve AantalPerBeurtA(0 To 1, 0 To Beurten - 1)
-            AantalPerBeurtA(0, Beurten - 1) = Beurten
-
-            AantalPerBeurtA(1, Beurten - 1) = Val(tbInvoerAantalA.Text)
-            Me.tbInvoerAantalB.Visible = True
-            Me.tbInvoerAantalA.Visible = False
-            Me.tbInvoerAantalA.ResetText()
-            Me.tbInvoerAantalB.Focus()
+            End If
         Else
-            ReDim Preserve AantalPerBeurtB(0 To 1, 0 To Beurten - 1)
-            AantalPerBeurtB(0, Beurten - 1) = Beurten
-            AantalPerBeurtB(1, Beurten - 1) = Val(tbInvoerAantalB.Text)
-            Me.tbInvoerAantalA.Visible = True
-            Me.tbInvoerAantalB.Visible = False
-            Me.tbInvoerAantalB.ResetText()
-            Me.tbInvoerAantalA.Focus()
+            NieuwTotaalB = Val(Me.tbInvoerAantalB.Text) + TotaalB
+            'MsgBox(NieuwTotaalB)
+            If Me.chbMaxAantal.Checked And NieuwTotaalB > MaxCarambole_B Then
+                Me.lblBericht.Text = "Te veel caramboles ingevoerd"
+                Me.tbInvoerAantalB.ResetText()
+                Me.tbInvoerAantalB.Focus()
+            Else
+                If NieuwTotaalB = MaxCarambole_B And Me.chbMaxAantal.Checked Then
+                    AantalBereikt = True
+                End If
+                ReDim Preserve AantalPerBeurtB(0 To 1, 0 To Beurten - 1)
+                AantalPerBeurtB(0, Beurten - 1) = Beurten
+                AantalPerBeurtB(1, Beurten - 1) = Val(tbInvoerAantalB.Text)
+                Me.tbInvoerAantalA.Visible = True
+                Me.tbInvoerAantalB.Visible = False
+                Me.tbInvoerAantalB.ResetText()
+                Me.tbInvoerAantalA.Focus()
+                Me.lblBericht.ResetText()
+
+            End If
+
         End If
         invullen(HuidigeSpeler)
         Me.CheckVoorEind()
+        If AantalBereikt Then Me.lblBericht.Text = "Aantal bereikt"
         HuidigeSpeler = Not HuidigeSpeler
         btUndo.Enabled = True
         If Beurten > 1 Then Me.btCorrectie.Enabled = True
+
     End Sub
 
     Private Sub btInstellingen_Click(sender As Object, e As EventArgs) Handles btInstellingen.Click
@@ -241,6 +334,15 @@ Public Class Form1
                 End Select
             End If
         Else
+
+            If AantalBereikt And HuidigeSpeler = Speler_B Then
+                    Me.lblBericht.Text = "Einde wedstrijd"
+                    Me.btPunten.Enabled = False
+                    Me.tbInvoerAantalB.Visible = False
+                    Me.tbInvoerAantalA.Visible = False
+                    Me.AcceptButton = Me.btNieuw
+                End If
+
 
         End If
     End Sub
@@ -327,10 +429,6 @@ Public Class Form1
         If HuidigeSpeler And Beurten = 0 Then btUndo.Enabled = False
     End Sub
 
-    Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-
-    End Sub
-
     Private Sub lblNaamSpelerB_Resize(sender As Object, e As EventArgs) Handles lblNaamSpelerB.Resize
         With Me
             .lblNaamSpelerB.Top = .lblNaamSpelerA.Top
@@ -341,7 +439,7 @@ Public Class Form1
 
 
     Function IsExcelInstalled() As Boolean
-        'check of excel geinstalleerd is
+        'check of excel geinstalleerd Is
         Dim officetype = Type.GetTypeFromProgID("Excel.Application")
         If officetype = Nothing Then
             IsExcelInstalled = False
@@ -352,4 +450,6 @@ Public Class Form1
         'om te testen
         'IsExcelInstalled = False
     End Function
+
+
 End Class

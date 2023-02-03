@@ -361,7 +361,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblMaxAantal.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="lblHoogsteSerie.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -394,7 +394,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblHoogsteSerie.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="lblGemiddelde.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -427,7 +427,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblGemiddelde.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="lblBeurten.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -460,7 +460,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblBeurten.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="lblMaxAantalB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -493,7 +493,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblMaxAantalB.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="lblHoogsteSerieB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -526,7 +526,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblHoogsteSerieB.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="lblGemiddeldeB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -559,7 +559,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblGemiddeldeB.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="lblCarambolesB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -592,7 +592,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblCarambolesB.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="lblMaxAantalA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -625,7 +625,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblMaxAantalA.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="lblHoogsteSerieA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -658,7 +658,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblHoogsteSerieA.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="lblGemiddeldeA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -691,7 +691,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblGemiddeldeA.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="lblCarambolesA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -724,7 +724,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;lblCarambolesA.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="tbInvoerAantalB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -751,7 +751,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;tbInvoerAantalB.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="tbInvoerAantalA.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt, style=Bold</value>
@@ -778,7 +778,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;tbInvoerAantalA.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="btPunten.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
@@ -808,7 +808,7 @@
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;btPunten.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="tbSpelerAInvoer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt</value>
@@ -1074,6 +1074,117 @@
   <data name="&gt;&gt;topPanel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="VerticalProgressBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="VerticalProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>939, 123</value>
+  </data>
+  <data name="VerticalProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 219</value>
+  </data>
+  <data name="VerticalProgressBar2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.Name" xml:space="preserve">
+    <value>VerticalProgressBar2</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.Type" xml:space="preserve">
+    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="VerticalProgressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="VerticalProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 123</value>
+  </data>
+  <data name="VerticalProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 219</value>
+  </data>
+  <data name="VerticalProgressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.Name" xml:space="preserve">
+    <value>VerticalProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.Type" xml:space="preserve">
+    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbPercB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 48pt</value>
+  </data>
+  <data name="lbPercB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbPercB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>872, 342</value>
+  </data>
+  <data name="lbPercB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 73</value>
+  </data>
+  <data name="lbPercB.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lbPercB.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="lbPercB.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.Name" xml:space="preserve">
+    <value>lbPercB</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbPercA.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 48pt</value>
+  </data>
+  <data name="lbPercA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbPercA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 342</value>
+  </data>
+  <data name="lbPercA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 73</value>
+  </data>
+  <data name="lbPercA.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbPercA.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.Name" xml:space="preserve">
+    <value>lbPercA</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="LopendewedstrijdPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 312</value>
   </data>
@@ -1255,13 +1366,10 @@
     <value>15, 12</value>
   </data>
   <data name="lblNaamSpelerA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 73</value>
+    <value>0, 73</value>
   </data>
   <data name="lblNaamSpelerA.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
-  </data>
-  <data name="lblNaamSpelerA.Text" xml:space="preserve">
-    <value>Label1</value>
   </data>
   <data name="lblNaamSpelerA.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
@@ -1291,13 +1399,10 @@
     <value>1420, 73</value>
   </data>
   <data name="lblNaamSpelerB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 73</value>
+    <value>0, 73</value>
   </data>
   <data name="lblNaamSpelerB.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
-  </data>
-  <data name="lblNaamSpelerB.Text" xml:space="preserve">
-    <value>Label1</value>
   </data>
   <data name="&gt;&gt;lblNaamSpelerB.Name" xml:space="preserve">
     <value>lblNaamSpelerB</value>
@@ -1321,7 +1426,7 @@
     <value>361, 865</value>
   </data>
   <data name="lblBericht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 62</value>
+    <value>946, 62</value>
   </data>
   <data name="lblBericht.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1379,6 +1484,9 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>61</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

@@ -1,6 +1,4 @@
-﻿Imports System.Data.SqlClient
-
-Public Class Form5
+﻿Public Class Form5
     Private Sub btSluiten_Click(sender As Object, e As EventArgs) Handles btSluiten.Click
         Me.Close()
 

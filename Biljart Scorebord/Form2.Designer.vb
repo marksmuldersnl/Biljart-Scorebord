@@ -29,6 +29,11 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.udMaxAantal = New System.Windows.Forms.NumericUpDown()
         Me.cbxMaxAantalBeurtenAan = New System.Windows.Forms.CheckBox()
+        Me.tbLogoPad = New System.Windows.Forms.TextBox()
+        Me.btSelecteerLogo = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.btLogoAanpassen = New System.Windows.Forms.Button()
+        Me.btStandaard = New System.Windows.Forms.Button()
         CType(Me.udMaxAantal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,9 +41,9 @@ Partial Class Form2
         '
         Me.btSluiten.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btSluiten.ForeColor = System.Drawing.Color.Black
-        Me.btSluiten.Location = New System.Drawing.Point(815, 31)
+        Me.btSluiten.Location = New System.Drawing.Point(779, 31)
         Me.btSluiten.Name = "btSluiten"
-        Me.btSluiten.Size = New System.Drawing.Size(134, 54)
+        Me.btSluiten.Size = New System.Drawing.Size(170, 54)
         Me.btSluiten.TabIndex = 0
         Me.btSluiten.Text = "Sluiten"
         Me.btSluiten.UseVisualStyleBackColor = True
@@ -47,9 +52,9 @@ Partial Class Form2
         '
         Me.btOpslaan.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btOpslaan.ForeColor = System.Drawing.Color.Black
-        Me.btOpslaan.Location = New System.Drawing.Point(815, 105)
+        Me.btOpslaan.Location = New System.Drawing.Point(779, 149)
         Me.btOpslaan.Name = "btOpslaan"
-        Me.btOpslaan.Size = New System.Drawing.Size(134, 54)
+        Me.btOpslaan.Size = New System.Drawing.Size(170, 54)
         Me.btOpslaan.TabIndex = 1
         Me.btOpslaan.Text = "Opslaan"
         Me.btOpslaan.UseVisualStyleBackColor = True
@@ -106,6 +111,52 @@ Partial Class Form2
         Me.cbxMaxAantalBeurtenAan.Text = "Max Aantal Beurten Aan"
         Me.cbxMaxAantalBeurtenAan.UseVisualStyleBackColor = True
         '
+        'tbLogoPad
+        '
+        Me.tbLogoPad.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbLogoPad.Location = New System.Drawing.Point(335, 298)
+        Me.tbLogoPad.Name = "tbLogoPad"
+        Me.tbLogoPad.Size = New System.Drawing.Size(345, 38)
+        Me.tbLogoPad.TabIndex = 7
+        '
+        'btSelecteerLogo
+        '
+        Me.btSelecteerLogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btSelecteerLogo.ForeColor = System.Drawing.Color.Black
+        Me.btSelecteerLogo.Location = New System.Drawing.Point(38, 298)
+        Me.btSelecteerLogo.Name = "btSelecteerLogo"
+        Me.btSelecteerLogo.Size = New System.Drawing.Size(262, 38)
+        Me.btSelecteerLogo.TabIndex = 8
+        Me.btSelecteerLogo.Text = "Selecteer Logo"
+        Me.btSelecteerLogo.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.DefaultExt = "png"
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'btLogoAanpassen
+        '
+        Me.btLogoAanpassen.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btLogoAanpassen.ForeColor = System.Drawing.Color.Black
+        Me.btLogoAanpassen.Location = New System.Drawing.Point(718, 289)
+        Me.btLogoAanpassen.Name = "btLogoAanpassen"
+        Me.btLogoAanpassen.Size = New System.Drawing.Size(247, 54)
+        Me.btLogoAanpassen.TabIndex = 9
+        Me.btLogoAanpassen.Text = "Standaard Logo"
+        Me.btLogoAanpassen.UseVisualStyleBackColor = True
+        '
+        'btStandaard
+        '
+        Me.btStandaard.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btStandaard.ForeColor = System.Drawing.Color.Black
+        Me.btStandaard.Location = New System.Drawing.Point(779, 89)
+        Me.btStandaard.Name = "btStandaard"
+        Me.btStandaard.Size = New System.Drawing.Size(170, 54)
+        Me.btStandaard.TabIndex = 10
+        Me.btStandaard.Text = "Standaard"
+        Me.btStandaard.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -113,6 +164,10 @@ Partial Class Form2
         Me.BackColor = System.Drawing.Color.Black
         Me.CausesValidation = False
         Me.ClientSize = New System.Drawing.Size(977, 591)
+        Me.Controls.Add(Me.btStandaard)
+        Me.Controls.Add(Me.btLogoAanpassen)
+        Me.Controls.Add(Me.btSelecteerLogo)
+        Me.Controls.Add(Me.tbLogoPad)
         Me.Controls.Add(Me.cbxMaxAantalBeurtenAan)
         Me.Controls.Add(Me.udMaxAantal)
         Me.Controls.Add(Me.Label2)
@@ -127,7 +182,7 @@ Partial Class Form2
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Instellingen"
         CType(Me.udMaxAantal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -141,4 +196,9 @@ Partial Class Form2
     Friend WithEvents Label2 As Label
     Friend WithEvents udMaxAantal As NumericUpDown
     Friend WithEvents cbxMaxAantalBeurtenAan As CheckBox
+    Friend WithEvents tbLogoPad As TextBox
+    Friend WithEvents btSelecteerLogo As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents btLogoAanpassen As Button
+    Friend WithEvents btStandaard As Button
 End Class

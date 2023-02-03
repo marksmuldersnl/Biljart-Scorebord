@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Clubnaam" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Krijt ut Töpke</Value>
+      <Value Profile="(Default)">Biljartzaal Krijt ut Töpke</Value>
     </Setting>
     <Setting Name="MaxAantalBeurtenStandaard" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
@@ -13,6 +13,9 @@
     </Setting>
     <Setting Name="BeurtenVerlengen" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="Logo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>
