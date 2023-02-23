@@ -55,7 +55,7 @@ Public Class Form3
 
 
     Private Sub Form3_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If Not wb.Name <> "" Then
+        If wb.Name <> "" Then
 
 
 
@@ -63,8 +63,8 @@ Public Class Form3
 
             xlsApp.Quit()
 
-            dtSpeler1.Clear()
-            dtSpeler2.Clear()
+            dtSpelersLijst1.Clear()
+            dtSpelerslijst2.Clear()
         End If
     End Sub
 
@@ -238,5 +238,21 @@ Public Class Form3
         With Me.cbxSelecteerSpelerB
             .SelectedIndex = -1
         End With
+    End Sub
+
+    Private Sub cbxKiesCompetitie_Click(sender As Object, e As EventArgs) Handles cbxKiesCompetitie.Click
+        Me.cbxKiesCompetitie.DroppedDown = True
+    End Sub
+
+    Private Sub cbxKiesCompetitieB_Click(sender As Object, e As EventArgs) Handles cbxKiesCompetitieB.Click
+        Me.cbxKiesCompetitieB.DroppedDown = True
+    End Sub
+
+    Private Sub cbxSelecteerSpelerA_Click(sender As Object, e As EventArgs) Handles cbxSelecteerSpelerA.Click
+        Me.cbxSelecteerSpelerA.DroppedDown = True
+    End Sub
+
+    Private Sub cbxSelecteerSpelerB_Click(sender As Object, e As EventArgs) Handles cbxSelecteerSpelerB.Click
+        Me.cbxSelecteerSpelerB.DroppedDown = True
     End Sub
 End Class

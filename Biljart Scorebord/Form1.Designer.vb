@@ -57,6 +57,8 @@ Partial Class Form1
         Me.chbMaxBeurten = New System.Windows.Forms.CheckBox()
         Me.btSwitchSpelers = New System.Windows.Forms.Button()
         Me.LopendewedstrijdPanel = New System.Windows.Forms.Panel()
+        Me.VerticalProgressBar2 = New Biljart_Scorebord.VerticalProgressBar()
+        Me.VerticalProgressBar1 = New Biljart_Scorebord.VerticalProgressBar()
         Me.lbPercB = New System.Windows.Forms.Label()
         Me.lbPercA = New System.Windows.Forms.Label()
         Me.bottomPanel = New System.Windows.Forms.Panel()
@@ -69,8 +71,6 @@ Partial Class Form1
         Me.lblBericht = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblTijd = New System.Windows.Forms.Label()
-        Me.VerticalProgressBar2 = New Biljart_Scorebord.VerticalProgressBar()
-        Me.VerticalProgressBar1 = New Biljart_Scorebord.VerticalProgressBar()
         CType(Me.udAantalSpelerB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udAantalSpelerA, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.topPanel.SuspendLayout()
@@ -318,6 +318,16 @@ Partial Class Form1
         resources.ApplyResources(Me.LopendewedstrijdPanel, "LopendewedstrijdPanel")
         Me.LopendewedstrijdPanel.Name = "LopendewedstrijdPanel"
         '
+        'VerticalProgressBar2
+        '
+        resources.ApplyResources(Me.VerticalProgressBar2, "VerticalProgressBar2")
+        Me.VerticalProgressBar2.Name = "VerticalProgressBar2"
+        '
+        'VerticalProgressBar1
+        '
+        resources.ApplyResources(Me.VerticalProgressBar1, "VerticalProgressBar1")
+        Me.VerticalProgressBar1.Name = "VerticalProgressBar1"
+        '
         'lbPercB
         '
         resources.ApplyResources(Me.lbPercB, "lbPercB")
@@ -386,16 +396,6 @@ Partial Class Form1
         resources.ApplyResources(Me.lblTijd, "lblTijd")
         Me.lblTijd.ForeColor = System.Drawing.Color.Yellow
         Me.lblTijd.Name = "lblTijd"
-        '
-        'VerticalProgressBar2
-        '
-        resources.ApplyResources(Me.VerticalProgressBar2, "VerticalProgressBar2")
-        Me.VerticalProgressBar2.Name = "VerticalProgressBar2"
-        '
-        'VerticalProgressBar1
-        '
-        resources.ApplyResources(Me.VerticalProgressBar1, "VerticalProgressBar1")
-        Me.VerticalProgressBar1.Name = "VerticalProgressBar1"
         '
         'Form1
         '

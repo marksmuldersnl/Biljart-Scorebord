@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Text
 Imports Microsoft.Office.Interop.Excel
 
 Public Class Form1
@@ -21,7 +22,7 @@ Public Class Form1
         End If
         With Me
             'uitlijnen knoppen
-            .btNieuw.Left = (.Width - .btNieuw.Width - .btStart.Width - .btCorrectie.Width - .btSpelerSelect.Width - .btUndo.Width - .btSluiten.Width) / 2
+            .btNieuw.Left = (.Width - .btNieuw.Width - .btStart.Width - .btInstellingen.Width - .btCorrectie.Width - .btSpelerSelect.Width - .btUndo.Width - .btSluiten.Width) / 2
             .btStart.Left = .btNieuw.Left + .btNieuw.Width
             .btCorrectie.Left = .btStart.Left + .btStart.Width
             .btInstellingen.Left = .btCorrectie.Left + .btCorrectie.Width
@@ -244,17 +245,20 @@ Public Class Form1
     Private Sub btPunten_Click(sender As Object, e As EventArgs) Handles btPunten.Click
         Dim NieuwTotaalA As Long
         Dim NieuwTotaalB As Long
-
+        Dim AantalCheck As Boolean
+        Dim MagInvullen As Boolean
+        AantalCheck = Me.chbMaxAantal.Checked
+        MagInvullen = False
 
 
 
         If HuidigeSpeler = Speler_A Then
             NieuwTotaalA = Val(Me.tbInvoerAantalA.Text) + TotaalA
-            'MsgBox(NieuwTotaalA)
-            If Me.chbMaxAantal.Checked And NieuwTotaalA > MaxCarambole_A Then
+            If AantalCheck And NieuwTotaalA > MaxCarambole_A Then
                 Me.lblBericht.Text = "Te veel caramboles ingevoerd"
                 Me.tbInvoerAantalA.ResetText()
                 Me.tbInvoerAantalA.Focus()
+                MagInvullen = False
             Else
                 Beurten = Beurten + 1
                 If NieuwTotaalA = MaxCarambole_A And Me.chbMaxAantal.Checked Then
@@ -268,15 +272,15 @@ Public Class Form1
                 Me.tbInvoerAantalA.ResetText()
                 Me.tbInvoerAantalB.Focus()
                 Me.lblBericht.ResetText()
-
+                MagInvullen = True
             End If
         Else
             NieuwTotaalB = Val(Me.tbInvoerAantalB.Text) + TotaalB
-            'MsgBox(NieuwTotaalB)
-            If Me.chbMaxAantal.Checked And NieuwTotaalB > MaxCarambole_B Then
+            If AantalCheck And NieuwTotaalB > MaxCarambole_B Then
                 Me.lblBericht.Text = "Te veel caramboles ingevoerd"
                 Me.tbInvoerAantalB.ResetText()
                 Me.tbInvoerAantalB.Focus()
+                MagInvullen = False
             Else
                 If NieuwTotaalB = MaxCarambole_B And Me.chbMaxAantal.Checked Then
                     AantalBereikt = True
@@ -289,16 +293,19 @@ Public Class Form1
                 Me.tbInvoerAantalB.ResetText()
                 Me.tbInvoerAantalA.Focus()
                 Me.lblBericht.ResetText()
-
+                MagInvullen = True
             End If
 
         End If
-        invullen(HuidigeSpeler)
-        Me.CheckVoorEind()
-        If AantalBereikt Then Me.lblBericht.Text = "Aantal bereikt"
-        HuidigeSpeler = Not HuidigeSpeler
-        btUndo.Enabled = True
-        If Beurten > 1 Then Me.btCorrectie.Enabled = True
+        If MagInvullen Then
+            invullen(HuidigeSpeler)
+            Me.CheckVoorEind()
+            If AantalBereikt Then Me.lblBericht.Text = "Aantal bereikt"
+            HuidigeSpeler = Not HuidigeSpeler
+            btUndo.Enabled = True
+            If Beurten > 1 Then Me.btCorrectie.Enabled = True
+        End If
+
 
     End Sub
 
@@ -333,17 +340,15 @@ Public Class Form1
                         Me.lblBericht.ResetText()
                 End Select
             End If
-        Else
-
+        End If
+        If Me.chbMaxAantal.Checked Then
             If AantalBereikt And HuidigeSpeler = Speler_B Then
-                    Me.lblBericht.Text = "Einde wedstrijd"
-                    Me.btPunten.Enabled = False
-                    Me.tbInvoerAantalB.Visible = False
-                    Me.tbInvoerAantalA.Visible = False
-                    Me.AcceptButton = Me.btNieuw
-                End If
-
-
+                Me.lblBericht.Text = "Einde wedstrijd"
+                Me.btPunten.Enabled = False
+                Me.tbInvoerAantalB.Visible = False
+                Me.tbInvoerAantalA.Visible = False
+                Me.AcceptButton = Me.btNieuw
+            End If
         End If
     End Sub
 
