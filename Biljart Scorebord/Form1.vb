@@ -130,7 +130,7 @@ Public Class Form1
                 .lblHoogsteSerieA.ResetText()
                 .lblHoogsteSerieB.ResetText()
                 .btSpelerSelect.Enabled = False
-
+                .lblBeurten.Text = "Beurten: "
                 MaxCarambole_A = .udAantalSpelerA.Value
                 MaxCarambole_B = .udAantalSpelerB.Value
                 .lbPercA.Visible = .lblMaxAantalA.Visible
@@ -141,6 +141,8 @@ Public Class Form1
                 .VerticalProgressBar2.Value = 0
                 .lbPercA.Text = "0%"
                 .lbPercB.Text = "0%"
+                .lbPercA.ForeColor = Color.Yellow
+                .lbPercB.ForeColor = Color.Yellow
                 .lbPercA.Left = .lblMaxAantalA.Left + .lblMaxAantalA.Width
                 .lbPercB.Left = .lblHoogsteSerieB.Left - .lbPercB.Width
                 .lblBericht.ResetText()
