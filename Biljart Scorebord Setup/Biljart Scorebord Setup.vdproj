@@ -4,9 +4,9 @@
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
 "ProjectName" = "8:Biljart Scorebord Setup"
-"LanguageId" = "3:1033"
+"LanguageId" = "3:0"
 "CodePage" = "3:1252"
-"UILanguageId" = "3:1033"
+"UILanguageId" = "3:0"
 "SccProjectName" = "8:"
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
@@ -291,16 +291,16 @@
         }
         "MsiBootstrapper"
         {
-        "LangId" = "3:1033"
+        "LangId" = "3:0"
         "RequiresElevation" = "11:FALSE"
         }
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Biljart Scorebord"
-        "ProductCode" = "8:{30BD63B7-B0E0-4E9A-89D5-99CB65965E56}"
-        "PackageCode" = "8:{2DA92C45-1DE1-448D-85B2-707F0662D223}"
-        "UpgradeCode" = "8:{7AF8AB76-89C8-4334-9C09-28737988514F}"
+        "ProductCode" = "8:{9285AD97-B774-49B4-878B-7CFC7DDB4E78}"
+        "PackageCode" = "8:{6CA9234B-AD5B-4AEA-B775-A784A3F7FDA8}"
+        "UpgradeCode" = "8:{2D4601B0-FC48-40A6-BEE9-8EAD14C6C868}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"

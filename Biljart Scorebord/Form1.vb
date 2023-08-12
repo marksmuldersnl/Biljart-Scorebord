@@ -21,8 +21,9 @@ Public Class Form1
             Me.btSpelerSelect.Enabled = True
         End If
         With Me
-            'uitlijnen knoppen
-            .btNieuw.Left = (.Width - .btNieuw.Width - .btStart.Width - .btInstellingen.Width - .btCorrectie.Width - .btSpelerSelect.Width - .btUndo.Width - .btSluiten.Width) / 2
+            'links uitlijnen knoppen
+            '.btNieuw.Left = (.Width - .btNieuw.Width - .btStart.Width - .btInstellingen.Width - .btCorrectie.Width - .btSpelerSelect.Width - .btUndo.Width - .btSluiten.Width) / 2
+            .btNieuw.Left = 10
             .btStart.Left = .btNieuw.Left + .btNieuw.Width
             .btCorrectie.Left = .btStart.Left + .btStart.Width
             .btInstellingen.Left = .btCorrectie.Left + .btCorrectie.Width
@@ -45,6 +46,7 @@ Public Class Form1
             .PictureBox2.Left = .bottomPanel.Width - .PictureBox2.Width - 5
 
             'uitlijnen lopendwedstrijd panel 
+            .LopendewedstrijdPanel.Top = .btStart.Top + btStart.Height + .lblNaamSpelerA.Height + 10
             .lblCarambolesA.Left = 5
             .lblCarambolesB.Left = .LopendewedstrijdPanel.Width - .lblCarambolesB.Width - 5
             .lblGemiddeldeA.Left = 5
@@ -71,11 +73,12 @@ Public Class Form1
 
             'uitlijnen naam labels
             .lblNaamSpelerA.Left = .topPanel.Left
-            .lblNaamSpelerA.Top = .LopendewedstrijdPanel.Top - .lblNaamSpelerA.Height - 10
+            .lblNaamSpelerA.Top = .LopendewedstrijdPanel.Top - .lblNaamSpelerA.Height - 5
             .lblNaamSpelerB.Top = .lblNaamSpelerA.Top
             .lblNaamSpelerB.Left = .Width - .lblNaamSpelerB.Width - 5
 
             .lblBericht.Left = (.bottomPanel.Width - .lblBericht.Width) / 2
+            .lblBericht.Top = .LopendewedstrijdPanel.Top + LopendewedstrijdPanel.Height
             .lblBiljartClub.Left = (.bottomPanel.Width - .lblBiljartClub.Width) / 2
             .lblTijd.Left = .Width - .lblTijd.Width
             .lbVersie.Left = 10
@@ -84,8 +87,10 @@ Public Class Form1
             .lbVersie.Left = .PictureBox1.Left + .PictureBox1.Width + 5
             TotaalA = 0
             TotaalB = 0
-
-
+            'instellingen laden
+            .lblBiljartClub.Text = My.Settings.Clubnaam
+            .udMaxAantalBeurten.Value = My.Settings.MaxAantalBeurtenStandaard
+            .chbMaxAantal.Checked = My.Settings.MaxAantalBeurtenAan
         End With
     End Sub
 

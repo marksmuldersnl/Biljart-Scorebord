@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btSluiten.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btSluiten.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -129,7 +129,7 @@
     <value>1023, 12</value>
   </data>
   <data name="btSluiten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 52</value>
+    <value>121, 52</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btSluiten.TabIndex" type="System.Int32, mscorlib">
@@ -151,7 +151,7 @@
     <value>12</value>
   </data>
   <data name="btNieuw.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btNieuw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -160,7 +160,7 @@
     <value>97, 12</value>
   </data>
   <data name="btNieuw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 52</value>
+    <value>124, 52</value>
   </data>
   <data name="btNieuw.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -181,16 +181,16 @@
     <value>11</value>
   </data>
   <data name="btStart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btStart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 12</value>
+    <value>227, 12</value>
   </data>
   <data name="btStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 52</value>
+    <value>112, 52</value>
   </data>
   <data name="btStart.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -211,7 +211,7 @@
     <value>9</value>
   </data>
   <data name="btCorrectie.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btCorrectie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -220,7 +220,7 @@
     <value>336, 12</value>
   </data>
   <data name="btCorrectie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 52</value>
+    <value>151, 52</value>
   </data>
   <data name="btCorrectie.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,7 +241,7 @@
     <value>8</value>
   </data>
   <data name="btInstellingen.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btInstellingen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -250,7 +250,7 @@
     <value>477, 12</value>
   </data>
   <data name="btInstellingen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 52</value>
+    <value>195, 52</value>
   </data>
   <data name="btInstellingen.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -271,16 +271,16 @@
     <value>7</value>
   </data>
   <data name="btSpelerSelect.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btSpelerSelect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btSpelerSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 12</value>
+    <value>678, 12</value>
   </data>
   <data name="btSpelerSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 52</value>
+    <value>194, 52</value>
   </data>
   <data name="btSpelerSelect.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -301,16 +301,16 @@
     <value>6</value>
   </data>
   <data name="btUndo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 21.75pt, style=Bold</value>
   </data>
   <data name="btUndo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btUndo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>836, 12</value>
+    <value>867, 12</value>
   </data>
   <data name="btUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 52</value>
+    <value>162, 52</value>
   </data>
   <data name="btUndo.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -912,6 +912,96 @@
   <data name="&gt;&gt;udAantalSpelerA.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;udMaxAantalBeurten.Name" xml:space="preserve">
+    <value>udMaxAantalBeurten</value>
+  </data>
+  <data name="&gt;&gt;udMaxAantalBeurten.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;udMaxAantalBeurten.Parent" xml:space="preserve">
+    <value>InstellenPanel</value>
+  </data>
+  <data name="&gt;&gt;udMaxAantalBeurten.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chbMaxAantal.Name" xml:space="preserve">
+    <value>chbMaxAantal</value>
+  </data>
+  <data name="&gt;&gt;chbMaxAantal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbMaxAantal.Parent" xml:space="preserve">
+    <value>InstellenPanel</value>
+  </data>
+  <data name="&gt;&gt;chbMaxAantal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chbMaxBeurten.Name" xml:space="preserve">
+    <value>chbMaxBeurten</value>
+  </data>
+  <data name="&gt;&gt;chbMaxBeurten.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbMaxBeurten.Parent" xml:space="preserve">
+    <value>InstellenPanel</value>
+  </data>
+  <data name="&gt;&gt;chbMaxBeurten.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btSwitchSpelers.Name" xml:space="preserve">
+    <value>btSwitchSpelers</value>
+  </data>
+  <data name="&gt;&gt;btSwitchSpelers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btSwitchSpelers.Parent" xml:space="preserve">
+    <value>InstellenPanel</value>
+  </data>
+  <data name="&gt;&gt;btSwitchSpelers.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="InstellenPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 13</value>
+  </data>
+  <data name="InstellenPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>572, 186</value>
+  </data>
+  <data name="InstellenPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;InstellenPanel.Name" xml:space="preserve">
+    <value>InstellenPanel</value>
+  </data>
+  <data name="&gt;&gt;InstellenPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InstellenPanel.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;InstellenPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="topPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 73</value>
+  </data>
+  <data name="topPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1563, 202</value>
+  </data>
+  <data name="topPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;topPanel.Name" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;topPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;topPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;topPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="udMaxAantalBeurten.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
   </data>
@@ -1032,65 +1122,11 @@
   <data name="&gt;&gt;btSwitchSpelers.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="InstellenPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 13</value>
-  </data>
-  <data name="InstellenPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>572, 186</value>
-  </data>
-  <data name="InstellenPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;InstellenPanel.Name" xml:space="preserve">
-    <value>InstellenPanel</value>
-  </data>
-  <data name="&gt;&gt;InstellenPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InstellenPanel.Parent" xml:space="preserve">
-    <value>topPanel</value>
-  </data>
-  <data name="&gt;&gt;InstellenPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="topPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 73</value>
-  </data>
-  <data name="topPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1563, 202</value>
-  </data>
-  <data name="topPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;topPanel.Name" xml:space="preserve">
-    <value>topPanel</value>
-  </data>
-  <data name="&gt;&gt;topPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;topPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;topPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="VerticalProgressBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="VerticalProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>939, 123</value>
-  </data>
-  <data name="VerticalProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 219</value>
-  </data>
-  <data name="VerticalProgressBar2.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <data name="&gt;&gt;VerticalProgressBar2.Name" xml:space="preserve">
     <value>VerticalProgressBar2</value>
   </data>
   <data name="&gt;&gt;VerticalProgressBar2.Type" xml:space="preserve">
-    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.0.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.1.0.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;VerticalProgressBar2.Parent" xml:space="preserve">
     <value>LopendewedstrijdPanel</value>
@@ -1098,29 +1134,62 @@
   <data name="&gt;&gt;VerticalProgressBar2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="VerticalProgressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="VerticalProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 123</value>
-  </data>
-  <data name="VerticalProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 219</value>
-  </data>
-  <data name="VerticalProgressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
   <data name="&gt;&gt;VerticalProgressBar1.Name" xml:space="preserve">
     <value>VerticalProgressBar1</value>
   </data>
   <data name="&gt;&gt;VerticalProgressBar1.Type" xml:space="preserve">
-    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.0.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.1.0.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;VerticalProgressBar1.Parent" xml:space="preserve">
     <value>LopendewedstrijdPanel</value>
   </data>
   <data name="&gt;&gt;VerticalProgressBar1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.Name" xml:space="preserve">
+    <value>lbPercB</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;lbPercB.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.Name" xml:space="preserve">
+    <value>lbPercA</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;lbPercA.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LopendewedstrijdPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 312</value>
+  </data>
+  <data name="LopendewedstrijdPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1563, 546</value>
+  </data>
+  <data name="LopendewedstrijdPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;LopendewedstrijdPanel.Name" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;LopendewedstrijdPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LopendewedstrijdPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LopendewedstrijdPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lbPercB.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
@@ -1185,32 +1254,80 @@
   <data name="&gt;&gt;lbPercA.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="LopendewedstrijdPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 312</value>
+  <data name="&gt;&gt;lbVersie.Name" xml:space="preserve">
+    <value>lbVersie</value>
   </data>
-  <data name="LopendewedstrijdPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1563, 546</value>
+  <data name="&gt;&gt;lbVersie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="LopendewedstrijdPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;lbVersie.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
   </data>
-  <data name="&gt;&gt;LopendewedstrijdPanel.Name" xml:space="preserve">
-    <value>LopendewedstrijdPanel</value>
+  <data name="&gt;&gt;lbVersie.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;LopendewedstrijdPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblBiljartClub.Name" xml:space="preserve">
+    <value>lblBiljartClub</value>
+  </data>
+  <data name="&gt;&gt;lblBiljartClub.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBiljartClub.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;lblBiljartClub.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Name" xml:space="preserve">
+    <value>PictureBox2</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bottomPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 963</value>
+  </data>
+  <data name="bottomPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1563, 100</value>
+  </data>
+  <data name="bottomPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Name" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LopendewedstrijdPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;bottomPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;LopendewedstrijdPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lbVersie.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lbVersie.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt</value>
+    <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="lbVersie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1219,7 +1336,7 @@
     <value>162, 28</value>
   </data>
   <data name="lbVersie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 42</value>
+    <value>98, 33</value>
   </data>
   <data name="lbVersie.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1332,32 +1449,11 @@
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="bottomPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 963</value>
-  </data>
-  <data name="bottomPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1563, 100</value>
-  </data>
-  <data name="bottomPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.Name" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="lblNaamSpelerA.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblNaamSpelerA.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 48pt</value>
+    <value>Microsoft Sans Serif, 36pt</value>
   </data>
   <data name="lblNaamSpelerA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1366,7 +1462,7 @@
     <value>15, 12</value>
   </data>
   <data name="lblNaamSpelerA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 73</value>
+    <value>0, 55</value>
   </data>
   <data name="lblNaamSpelerA.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1390,7 +1486,7 @@
     <value>True</value>
   </data>
   <data name="lblNaamSpelerB.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 48pt</value>
+    <value>Microsoft Sans Serif, 36pt</value>
   </data>
   <data name="lblNaamSpelerB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1399,7 +1495,7 @@
     <value>1420, 73</value>
   </data>
   <data name="lblNaamSpelerB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 73</value>
+    <value>0, 55</value>
   </data>
   <data name="lblNaamSpelerB.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1482,17 +1578,65 @@
   <data name="&gt;&gt;lblTijd.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="VerticalProgressBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="VerticalProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>939, 123</value>
+  </data>
+  <data name="VerticalProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 219</value>
+  </data>
+  <data name="VerticalProgressBar2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.Name" xml:space="preserve">
+    <value>VerticalProgressBar2</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.Type" xml:space="preserve">
+    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.1.0.4, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="VerticalProgressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="VerticalProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 123</value>
+  </data>
+  <data name="VerticalProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 219</value>
+  </data>
+  <data name="VerticalProgressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.Name" xml:space="preserve">
+    <value>VerticalProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.Type" xml:space="preserve">
+    <value>Biljart_Scorebord.VerticalProgressBar, Biljart Scorebord, Version=1.1.0.4, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.Parent" xml:space="preserve">
+    <value>LopendewedstrijdPanel</value>
+  </data>
+  <data name="&gt;&gt;VerticalProgressBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>61</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1658, 1042</value>
+    <value>1444, 881</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2666,6 +2810,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Scorebord</value>
