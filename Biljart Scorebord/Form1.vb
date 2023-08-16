@@ -223,6 +223,7 @@ Public Class Form1
         Erase AantalPerBeurtB
 
         Me.btCorrectie.Enabled = False
+        LoadSettings()
     End Sub
 
 

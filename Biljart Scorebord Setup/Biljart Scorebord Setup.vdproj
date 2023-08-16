@@ -298,9 +298,9 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Biljart Scorebord"
-        "ProductCode" = "8:{4D990263-0451-4A7C-B363-68B04F5D282B}"
-        "PackageCode" = "8:{6CA9234B-AD5B-4AEA-B775-A784A3F7FDA8}"
-        "UpgradeCode" = "8:{6232FF02-6E16-4C60-B0BE-07DEE28C74DB}"
+        "ProductCode" = "8:{1A0D0FE4-6DBD-4090-9C35-2627F315FD88}"
+        "PackageCode" = "8:{0C949A5D-F215-41DE-8F6B-AAEC1A21574B}"
+        "UpgradeCode" = "8:{0CADF5FB-0246-4DDF-912E-B06F3C8C734D}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"

@@ -34,6 +34,7 @@ Partial Class Form2
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.btLogoAanpassen = New System.Windows.Forms.Button()
         Me.btStandaard = New System.Windows.Forms.Button()
+        Me.cbxMaxAantalAan = New System.Windows.Forms.CheckBox()
         CType(Me.udMaxAantal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -157,13 +158,26 @@ Partial Class Form2
         Me.btStandaard.Text = "Standaard"
         Me.btStandaard.UseVisualStyleBackColor = True
         '
+        'cbxMaxAantalAan
+        '
+        Me.cbxMaxAantalAan.AutoSize = True
+        Me.cbxMaxAantalAan.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxMaxAantalAan.Location = New System.Drawing.Point(38, 204)
+        Me.cbxMaxAantalAan.Name = "cbxMaxAantalAan"
+        Me.cbxMaxAantalAan.Size = New System.Drawing.Size(222, 35)
+        Me.cbxMaxAantalAan.TabIndex = 11
+        Me.cbxMaxAantalAan.Text = "Max Aantal Aan"
+        Me.cbxMaxAantalAan.UseVisualStyleBackColor = True
+        '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.Black
         Me.CausesValidation = False
         Me.ClientSize = New System.Drawing.Size(977, 591)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.cbxMaxAantalAan)
         Me.Controls.Add(Me.btStandaard)
         Me.Controls.Add(Me.btLogoAanpassen)
         Me.Controls.Add(Me.btSelecteerLogo)
@@ -201,4 +215,5 @@ Partial Class Form2
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents btLogoAanpassen As Button
     Friend WithEvents btStandaard As Button
+    Friend WithEvents cbxMaxAantalAan As CheckBox
 End Class

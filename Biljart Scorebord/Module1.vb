@@ -120,5 +120,11 @@
             Return 0
         End If
     End Function
+    Public Sub LoadSettings()
+        Form1.lblBiljartClub.Text = My.Settings.Clubnaam
+        Form1.udMaxAantalBeurten.Value = My.Settings.MaxAantalBeurtenStandaard
+        Form1.chbMaxBeurten.Checked = My.Settings.MaxAantalBeurtenAan
+        Form1.chbMaxAantal.Checked = My.Settings.MaxAantalAan
+    End Sub
 End Module
 

@@ -69,11 +69,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>F0854036179DE48005A33800629675816AD0D995</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>B1346BE6AEC7B9CCC7802EC6D23710E2CF65219D</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>Biljart Scorebord_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>false</GenerateManifests>
@@ -218,6 +217,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Biljart Scorebord_1_TemporaryKey.pfx" />
     <None Include="Biljart Scorebord_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">

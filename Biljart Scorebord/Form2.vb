@@ -13,6 +13,7 @@ Public Class Form2
         Me.udMaxAantal.Value = My.Settings.MaxAantalBeurtenStandaard
         Me.OpenFileDialog1.Filter = "(Image Files)|*.jpg;*.png;*.bmp;*.gif;*.ico|Jpg, | *.jpg|Png, | *.png|Bmp, | *.bmp|Gif, | *.gif|Ico | *.ico"
         Me.tbLogoPad.Text = My.Settings.Logo
+        Me.cbxMaxAantalAan.Checked = My.Settings.MaxAantalAan
     End Sub
 
     Private Sub btOpslaan_Click(sender As Object, e As EventArgs) Handles btOpslaan.Click
@@ -20,11 +21,9 @@ Public Class Form2
         My.Settings.MaxAantalBeurtenAan = Me.cbxMaxAantalBeurtenAan.Checked
         My.Settings.MaxAantalBeurtenStandaard = Me.udMaxAantal.Value
         My.Settings.Logo = Me.tbLogoPad.Text
+        My.Settings.MaxAantalAan = Me.cbxMaxAantalAan.Checked
         My.Settings.Save()
-        Form1.lblBiljartClub.Text = My.Settings.Clubnaam
-        Form1.udMaxAantalBeurten.Value = My.Settings.MaxAantalBeurtenStandaard
-        Form1.chbMaxBeurten.Checked = My.Settings.MaxAantalBeurtenAan
-
+        LoadSettings()
     End Sub
 
     Private Sub btSelecteerLogo_Click(sender As Object, e As EventArgs) Handles btSelecteerLogo.Click
