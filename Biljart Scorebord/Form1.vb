@@ -164,14 +164,20 @@ Public Class Form1
     End Sub
 
     Private Sub btNieuw_Click(sender As Object, e As EventArgs) Handles btNieuw.Click
-        btUndo.Enabled = False
-        Me.topPanel.Visible = True
-        Me.LopendewedstrijdPanel.Visible = False
-        Me.btCorrectie.Enabled = False
-        Me.lblNaamSpelerA.Visible = False
-        Me.lblNaamSpelerB.Visible = False
-        Me.btSpelerSelect.Enabled = True
-
+        Dim Result As DialogResult
+        If Me.LopendewedstrijdPanel.Visible Then
+            Result = Form6.ShowDialog
+            If Result = DialogResult.Yes Then
+                btUndo.Enabled = False
+                Me.topPanel.Visible = True
+                Me.LopendewedstrijdPanel.Visible = False
+                Me.btCorrectie.Enabled = False
+                Me.lblNaamSpelerA.Visible = False
+                Me.lblNaamSpelerB.Visible = False
+                Me.btSpelerSelect.Enabled = True
+                Me.lblBericht.ResetText()
+            End If
+        End If
     End Sub
 
     Private Sub chbMaxBeurten_CheckedChanged(sender As Object, e As EventArgs)
@@ -306,8 +312,8 @@ Public Class Form1
         End If
         If MagInvullen Then
             invullen(HuidigeSpeler)
-            Me.CheckVoorEind()
             If AantalBereikt Then Me.lblBericht.Text = "Aantal bereikt"
+            Me.CheckVoorEind()
             HuidigeSpeler = Not HuidigeSpeler
             btUndo.Enabled = True
             If Beurten > 1 Then Me.btCorrectie.Enabled = True
@@ -335,10 +341,12 @@ Public Class Form1
                 Select Case Beurten
                     Case Me.udMaxAantalBeurten.Value
                         Me.lblBericht.Text = "Einde wedstrijd"
+                        Me.btNieuw.Select()
                         Me.btPunten.Enabled = False
                         Me.tbInvoerAantalB.Visible = False
                         Me.tbInvoerAantalA.Visible = False
-                        Me.AcceptButton = Me.btNieuw
+
+                        Me.Select()
                     Case Me.udMaxAantalBeurten.Value - 1
                         Me.lblBericht.Text = "Laatste beurt"
                     Case Me.udMaxAantalBeurten.Value - 2
@@ -354,7 +362,8 @@ Public Class Form1
                 Me.btPunten.Enabled = False
                 Me.tbInvoerAantalB.Visible = False
                 Me.tbInvoerAantalA.Visible = False
-                Me.AcceptButton = Me.btNieuw
+                Me.btNieuw.Select()
+
             End If
         End If
     End Sub
