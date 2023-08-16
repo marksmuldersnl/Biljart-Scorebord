@@ -192,6 +192,7 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(1117, 630)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btAanpassenSpeler2)
         Me.Controls.Add(Me.btAanpassenSpeler1)
         Me.Controls.Add(Me.Label4)

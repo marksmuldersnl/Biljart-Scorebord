@@ -46,6 +46,7 @@ Partial Class Form3
         'btInvullen
         '
         Me.btInvullen.BackColor = System.Drawing.Color.Black
+        Me.btInvullen.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btInvullen.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btInvullen.ForeColor = System.Drawing.Color.Yellow
         Me.btInvullen.Location = New System.Drawing.Point(58, 545)
@@ -58,6 +59,7 @@ Partial Class Form3
         'btClose
         '
         Me.btClose.BackColor = System.Drawing.Color.Black
+        Me.btClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btClose.ForeColor = System.Drawing.Color.Yellow
         Me.btClose.Location = New System.Drawing.Point(1157, 532)
@@ -142,6 +144,7 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1451, 638)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
